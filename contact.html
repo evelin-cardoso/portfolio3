@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Contato — Evelin Cardoso</title><link rel="stylesheet" href="styles.css"/></head>
+<body>
+  <header class="topbar">
+    <div class="container navwrap">
+      <a class="logo" href="index.html">Evelin<span class="dot">.</span></a>
+      <nav>
+        <ul class="navlinks">
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="projects.html">Projetos</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary" href="https://github.com/evelin-cardoso">GitHub</a>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Contato</h1>
+    <p>Fale comigo via e-mail ou LinkedIn — respondo rápido!</p>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p><a href="mailto:cienciadedados.evelin@gmail.com">cienciadedados.evelin@gmail.com</a></p>
+      </div>
+      <div class="contact-card">
+        <h3>LinkedIn</h3>
+        <p><a href="https://www.linkedin.com/feed/">Perfil LinkedIn</a></p>
+      </div>
+    </div>
+
+    <section class="contact-form-wrap">
+      <h2>Enviar mensagem rápida</h2>
+      <form onsubmit="handleContact(event)" class="contact-form">
+        <label>Nome<input id="name" required /></label>
+        <label>Email<input id="email" type="email" required /></label>
+        <label>Mensagem<textarea id="message" required></textarea></label>
+        <div class="form-actions"><button class="btn btn-primary" type="submit">Enviar</button></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid"><div><strong>Evelin Cardoso</strong></div><div><p><a href="mailto:cienciadedados.evelin@gmail.com">cienciadedados.evelin@gmail.com</a></p></div></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

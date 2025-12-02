@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Evelin Cardoso — Portfólio Profissional</title>
+  <meta name="description" content="Portfólio profissional de Evelin Cardoso — desenvolvedora e cientista de dados em formação. Projetos, habilidades e contato." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container navwrap">
+      <a class="logo" href="index.html">Evelin<span class="dot">.</span></a>
+      <nav>
+        <ul class="navlinks">
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="projects.html">Projetos</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+      </nav>
+      <button id="cta-portfolio" class="btn btn-primary">Ver projetos</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <h1>Oi, eu sou a <span class="accent">Evelin</span></h1>
+        <p class="lead">Desenvolvedora e Cientista de Dados em formação — eu transformo dados em insights visuais e crio interfaces funcionais com cuidado estético.</p>
+        <div class="hero-ctas">
+          <a href="projects.html" class="btn btn-primary">Projetos</a>
+          <a href="contact.html" class="btn btn-ghost">Contactar</a>
+        </div>
+
+        <ul class="quick-stats">
+          <li><strong>6+</strong><span>projetos</span></li>
+          <li><strong>Python</strong><span>Dados & Scripts</span></li>
+          <li><strong>Power BI</strong><span>Dashboards</span></li>
+        </ul>
+      </div>
+      <div class="hero-right" aria-hidden="true">
+        <div class="profile-frame">
+          <img src="assets/profile.png" alt="Foto de Evelin — perfil" class="profile-img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase container">
+      <h2>Projetos selecionados</h2>
+      <div class="showcase-grid">
+        <article class="showcase-card" data-project="p1">
+          <img src="assets/p1.png" alt="Portfólio screenshot" />
+          <div class="card-meta">
+            <h3>Portfólio Pessoal</h3>
+            <p>Site responsivo com apresentação profissional e deploy em Netlify.</p>
+            <a class="link" href="https://genuine-sunburst-722653.netlify.app/" target="_blank" rel="noopener">Abrir projeto →</a>
+          </div>
+        </article>
+
+        <article class="showcase-card" data-project="p2">
+          <img src="assets/p2.png" alt="Consciência Negra screenshot" />
+          <div class="card-meta">
+            <h3>Consciência Negra</h3>
+            <p>Site educativo com conteúdo informativo e interações CSS/JS.</p>
+            <a class="link" href="https://evelin-cardoso.github.io/consciencianegratudosobre/index.html" target="_blank" rel="noopener">Abrir projeto →</a>
+          </div>
+        </article>
+
+        <article class="showcase-card" data-project="p3">
+          <img src="assets/p3.png" alt="Power BI screenshot" />
+          <div class="card-meta">
+            <h3>Dashboard Power BI</h3>
+            <p>Relatório interativo com visualizações analíticas.</p>
+            <a class="link" href="https://power-bi-dashboards-3zws.bolt.host/?authuser=1" target="_blank" rel="noopener">Abrir projeto →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="why container">
+      <div class="card why-card">
+        <h3>O que eu entrego</h3>
+        <p>Interfaces claras, código organizado e visualizações que ajudam a tomar decisões. Prefiro entregas com documentação e testes simples.</p>
+      </div>
+      <div class="card why-card">
+        <h3>Como trabalho</h3>
+        <p>Iterativo — planejo, testo e entrego. Uso Git para versionamento e documentação clara para facilitar manutenção.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Evelin Cardoso</strong>
+        <p>Desenvolvedora & Cientista de Dados em formação</p>
+      </div>
+      <div>
+        <p><a href="https://github.com/evelin-cardoso">GitHub</a> • <a href="https://www.linkedin.com/feed/">LinkedIn</a></p>
+        <p><a href="mailto:cienciadedados.evelin@gmail.com">cienciadedados.evelin@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project modal (hidden by default) -->
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Fechar">✕</button>
+      <h2 id="modal-title">Título do projeto</h2>
+      <p id="modal-desc">Descrição detalhada do projeto — problema, solução, tecnologias e link.</p>
+      <div id="modal-images" class="modal-images"></div>
+      <p class="modal-meta"><strong>Tecnologias:</strong> HTML, CSS, JS</p>
+      <p><a id="modal-link" href="#" target="_blank" rel="noopener">Abrir repositório / demo</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
